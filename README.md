@@ -1,10 +1,12 @@
 # Disaster Response Pipeline Project
+![image](notebooks_workspace/Screenshot.png)
+
 
 ## Table of Contents
 1. [Description](#description)
 2. [Instructions](#instructions)
 	1. [Dependencies](#dependencies)
-	2. [Installing](#installation)
+	2. [Installation](#installation)
 	3. [Executing Program](#execution)
 	4. [Additional Material](#material)
 3. [Authors](#authors)
@@ -35,8 +37,8 @@ The Project is divided in the following Sections:
 * Web App and Data Visualization: Flask, Plotly
 
 <a name="installation"></a>
-### Installing
-To clone the git repository:
+### Installation
+Clone the git repository:
 ```
 git clone https://github.com/alirezakfz/Disaster_Response_Pipelines.git
 ```
