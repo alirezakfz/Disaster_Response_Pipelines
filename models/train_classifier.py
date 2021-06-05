@@ -22,7 +22,7 @@ from sklearn.pipeline import FeatureUnion
 import pickle
 from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
-
+import gzip
 
 def load_data(database_filepath):
     """
@@ -151,7 +151,10 @@ def save_model(model, model_filepath):
         
     """
     # using pickle to store trained classifier
-    pickle.dump(model,open(model_filepath,'wb'))
+    with gzip.open(model_filepath, 'wb') as f:
+        Pickle.dump(model, f)
+    
+    #pickle.dump(model,open(model_filepath,'wb'))
     pass
 
 
